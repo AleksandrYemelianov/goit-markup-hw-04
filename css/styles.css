@@ -226,7 +226,7 @@ img {
       var(--firsty-bg-color),
       var(--firsty-bg-color)
     ),
-    url(/images/Img.jpg);
+    url(../images/Img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
