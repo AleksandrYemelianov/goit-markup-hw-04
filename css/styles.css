@@ -229,7 +229,6 @@ img {
     url(../images/Img.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
 }
 
 .hero-title {
