@@ -9,7 +9,9 @@
   --secondary-btn-color: #188ce8;
   --primary-white-color: #ffffff;
   /* Цвет фон ГЕРОЙ и ФУТЕР */
-  --primary-bg-color: #2f303a;
+  --footer-bg-color: #2f303a;
+  --firsty-bg-color: rgba(47, 48, 58, 0.4);
+  --secondary-bg-color: #c4c4c4;
   /* Цвет тел и почта ФУТЕР */
   --telemail-footer-color: rgba(255, 255, 255, 0.6);
 }
@@ -173,10 +175,11 @@ img {
 }
 
 .contact-link {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   margin-left: 0;
+  align-items: center;
 
   color: var(--secondary-text-color);
   font-weight: 500;
@@ -210,13 +213,23 @@ img {
 /* Герой */
 
 .hero {
-  background-color: var(--primary-bg-color);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-}
 
-.hero-bg {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--secondary-bg-color);
+  background-image: linear-gradient(
+      to right,
+      var(--firsty-bg-color),
+      var(--firsty-bg-color)
+    ),
+    url(/images/Img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .hero-title {
@@ -260,6 +273,20 @@ img {
 /* Особенности */
 .feature-list {
   display: flex;
+}
+
+.feature-thumb {
+  display: flex;
+  width: 100%;
+  background-color: var(--button-color);
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.feature-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .feature-title {
@@ -345,7 +372,7 @@ img {
 }
 /* Футер */
 .footer {
-  background-color: var(--primary-bg-color);
+  background-color: var(--footer-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
