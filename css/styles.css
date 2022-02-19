@@ -157,13 +157,15 @@ img {
 }
 
 /* Контакты ШАПКА */
-.contact {
+/* .contact {
   margin-right: 0;
   margin-left: auto;
-}
+} */
 
 .contact-list {
   display: flex;
+  margin-right: 0;
+  margin-left: auto;
 }
 
 .contact-list .contact-item + .contact-item {
