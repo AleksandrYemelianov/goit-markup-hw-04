@@ -176,12 +176,30 @@ img {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  margin-left: 0;
 
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  justify-content: center;
+}
+
+.contact-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+
+  fill: currentColor;
+}
+
+.contact-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+
+  fill: currentColor;
 }
 
 .contact-link:hover,
