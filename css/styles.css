@@ -14,6 +14,9 @@
   --secondary-bg-color: #c4c4c4;
   /* Цвет тел и почта ФУТЕР */
   --telemail-footer-color: rgba(255, 255, 255, 0.6);
+  /*  Цвет соцситей */
+  --firsty-social-color: #afb1b8;
+  --footer-social-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Raleway    bold-700
@@ -335,6 +338,9 @@ img {
 /* Наща команда */
 .team {
   background-color: var(--button-color);
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .team-list {
@@ -350,7 +356,7 @@ img {
 
 .team-wrapper {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 
 .team-title {
@@ -371,11 +377,84 @@ img {
 .team-list .team-item + .team-item {
   margin-left: 30px;
 }
+
+.social {
+  display: flex;
+  padding: 0 32px 30px;
+}
+
+.social-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  display: block;
+  color: var(--firsty-social-color);
+  padding: 12px;
+  border-radius: 50%;
+  /* outline: 2px solid greenyellow; */
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.social-icon {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Наши клиенты */
+.clients {
+  display: flex;
+}
+
+.clients-list {
+}
+
+.clients-link {
+  display: block;
+  border: 1px solid var(--firsty-social-color);
+  border-radius: 4px;
+  padding: 15px 31px;
+
+  color: var(--firsty-social-color);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.clients-icon {
+  display: flex;
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
+.clients .clients-list + .clients-list {
+  margin-left: 30px;
+}
+
 /* Футер */
 .footer {
   background-color: var(--footer-bg-color);
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-item {
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -413,6 +492,51 @@ img {
 
 .email-tel-list .list:not(:last-child) {
   margin-bottom: 9px;
+}
+.join {
+  margin-left: 70px;
+}
+
+.join-text {
+  display: block;
+  margin-bottom: 20px;
+
+  color: var(--primary-white-color);
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.join-social {
+  display: flex;
+  /* padding: 0 32px 30px; */
+}
+
+.join-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.join-link {
+  display: block;
+  color: var(--primary-white-color);
+  background-color: var(--footer-social-color);
+  padding: 12px;
+  border-radius: 50%;
+  /* outline: 2px solid greenyellow; */
+}
+
+.join-link:hover,
+.join-link:focus {
+  background-color: var(--accent-color);
+}
+
+.join-icon {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 /* ПОРТФОЛИО */
@@ -471,6 +595,12 @@ img {
   margin-bottom: 30px;
   flex-basis: calc(100% / 3 - 30px);
   /* outline: 2px solid greenyellow; */
+}
+
+.project-item:hover,
+.project-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-content {
